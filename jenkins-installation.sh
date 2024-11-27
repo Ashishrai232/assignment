@@ -37,6 +37,10 @@ install_jenkins() {
         brew install jenkins-lts
     fi
     
+
+    sudo systemctl start jenkins
+    sudo systemctl enable jenkins
+    
     echo "Jenkins latest LTS installed."
 }
 
